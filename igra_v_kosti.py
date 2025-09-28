@@ -30,10 +30,16 @@ def dice():
             if choice in ["Y", "N"]:
                 break
             print("Неверный ввод. Пожалуйста, введите Y или N.")
+
+            
         
         if choice == "N":
             print("Спасибо за игру! До свидания!")
             break
+while True:
+    print('Нажмите кнопку ввода, чтобы бросить кубик.')
+    roll=input()
+    dice()
 
 if __name__ == "__main__":
     dice()
